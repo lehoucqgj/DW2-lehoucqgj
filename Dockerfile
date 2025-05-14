@@ -9,8 +9,6 @@ COPY ./html /var/www/html/
 
 RUN date >> /var/www/html/buildtime.txt
 
-
-
 EXPOSE 81/tcp
 
 CMD service apache2 start && bash
